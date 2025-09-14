@@ -1,0 +1,180 @@
+* {
+    margin: 0;              
+    padding: 0;             
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; /* primary font */  
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: 100vh;
+}
+
+.top-side{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.top-side a{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease;
+}
+
+.top-side a:hover{
+    color: blue;
+}
+
+.profile-img{
+    background: black;
+    padding: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.profile-img i{
+    color: white;
+    font-size: 14px;
+}
+
+.logo-text{
+    font-size: 70px;
+    letter-spacing: -7px;
+}
+
+.search-box{
+    width: 600px;
+    border: 2px solid black;
+    padding: 7px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search-box form button{
+    background: none;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #131313af;
+    transition: all 300ms ease;
+}
+
+.search-box form button:hover{
+    background: rgb(227, 227, 227);
+}
+
+.search-box form input{
+    width: 100%;
+    height: 30px;
+    padding: 0 13px;
+    border: none;
+    outline: none;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ai-mode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 150px;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 50px;
+    color: black;
+}
+
+.down-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.down-btns a{
+    background: rgb(216, 216, 216);
+    padding: 8px 12px;
+    color: black;
+    border-radius: 5px;
+}
+
+.bottom-tag a{
+    color: blue;
+    transition: all 300ms ease;
+}
+
+.bottom-tag a:hover{
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 767px){
+    .logo-text {
+    font-size: 55px;
+    letter-spacing: -7px;
+}
+.search-box form {
+    gap: 5px;
+}
+.search-box form button{
+    width: 22px;
+    height: 22px;
+}
+
+.search-box form input{
+    padding: 0;
+}
+
+    .search-box{
+        width: 85%;
+    }
+    .ai-mode {
+    gap: 5px;
+    width: 100px;
+    padding: 7px;
+    font-size: 10px;
+}
+.ai-icon{
+    font-size: 12px;
+}
+.down-btns a {
+    font-size: 12px;
+}
+.bottom-tag {
+    font-size: 10px;
+}
+}
